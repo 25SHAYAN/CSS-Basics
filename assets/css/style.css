@@ -1,0 +1,233 @@
+
+/*   P6.HTML  */
+.csscolor1{
+    background-color: teal;
+    /*color: white;
+    margin: 20px;
+    padding: 20px;*/
+}
+.csscolor2{
+    background-color:#808080;
+    /*color: white;
+    margin: 20px;
+    padding: 20px;*/
+}
+.csscolor3{
+    background-color:rgb(128, 0, 128);
+    /*color: white;
+    margin: 20px;
+    padding: 20px;*/ 
+     /*since their is a repeted code for all 3 classes to reduce it wr decelar another class and decelar it with all the classes in html page*/
+}
+
+.commancsscolors{
+    color:white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* p7.html */
+.jumbotron{
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.cssfont{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+/* p8.html */
+.csstext{
+    text-decoration: underline;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.csstext>p{
+    text-indent: 100px;
+}
+
+/*  p9.html */
+.navbar{
+    background-color: gray;
+}
+
+.navbar>ul{
+list-style-type: none;/* since none is used it creates a space from end to remove space we use padd and mar */
+padding: 0%;
+margin: 0%;
+float: right;
+}
+.navbar>ul>li{
+    display:inline-block;
+    padding: 20px;
+}
+.navbar>ul>li:hover{
+    background-color: orange;
+
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.navbar>ul>li:hover a{
+    color: blueviolet;
+}
+.navbar>img{
+    height: 70px;
+}
+
+/*    p10.html    */
+.list-marker-position>ol>li{
+    background-color: teal;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside;  /* since 1,2,3.. are outside the list to bring back inside we used this  */
+}
+.list-marker-position>ol>li>a{
+    color: red;
+    text-decoration: none;
+}
+.list-marker-position>ol>li::marker{
+    color:thistle;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/*     p11.html    */
+.list-icon>ul>li{
+list-style-image: url(../images/java.png);
+}
+
+
+/*     P12.HTML    */
+.list-shorthand>ul>li{
+    background-color: aqua;
+    padding: 30px;
+    margin-bottom: 20px;
+     /*list-style-type: none;
+    list-style-position: inside;
+    list-style-image: url(../images/java.png);  */
+
+    /*  INSTEAD OF THESE WE CAN DO IT IN ONE TAG AS BELOW */
+
+    list-style: none inside url(../images/css-3.png);
+}
+
+/*          P13.HTML              */
+.empty-cell-table{
+    empty-cells: hide;
+}
+
+/*      P14.HTML      */
+.odd-even-table,.odd-even-table th, .odd-even-table td{
+    border: 1px solid red;
+    padding: 20px;
+    border-collapse: collapse;
+}
+.odd-even-table{
+    background-color: aquamarine;
+}
+/*
+.odd-even-table tr{
+    background-color: blue;
+} */  /* for getting bg color */
+.odd-even-table tr:nth-child(odd){
+    background-color: blue;
+}
+.odd-even-table tr:nth-child(even){
+    background-color: rgb(5, 5, 41);
+}
+.odd-even-table tr:hover{
+    background-color:yellow;
+}
+.odd-even-table th{
+    background-color:pink;
+}
+.odd-even-table>caption{
+    color: gold;
+    font-weight: bold;
+    caption-side: bottom;
+}
+.odd-even-table td{
+    height: 100px;
+    vertical-align: middle;
+}
+
+/*        P15.HTML           */
+.layout-table{
+width: 10%;
+table-layout: fixed;
+}
+.layout-table, .layout-table th, .layout-table td{
+    border: 2px solid blue;
+    border-collapse: collapse;
+    padding: 20px;
+}
+.layout-table th, .layout-table td{
+    overflow: scroll;
+}
+
+/*       P16.HTML       */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    background-color: burlywood;
+}
+header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+header>nav>img{
+    height: 64px;
+}
+header>nav>ul>li{
+    display: inline-block;
+    padding: 25px;
+}
+header>nav>ul>li:hover{
+    background-color: silver;
+}
+header>nav>ul>li:hover a{
+    color: brown;
+}
+header>nav>ul>li>a{
+    color: fuchsia;
+    text-decoration: none;
+}
+
+/*      P17.HTML      */
+.banner1{
+    background-color: bisque;
+    
+}
+.bannercommonclass{
+    color: blue;
+    padding: 30px;
+    height: 40vh;
+    text-align: center;
+}
+.bannercommonclass>h1{
+    font-size: 50px;
+}
+.bannercommonclass>h1:hover{
+    color: #87CEEB;
+}
+
+
+/*        p18.html          */
+.banner2{
+    background-image: url(../images/pexels-yogendra-singh-2450439.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-size: contain;*/
+   background-size: cover;
+}

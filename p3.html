@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination{
+            background-color: grey;
+            color: white;
+            padding: 20px;
+        }
+        .combination > h3{
+            color: red;
+        }
+        .combination >p{
+            color: yellow;
+        }
+        .combination >div{
+            background-color: white;
+            padding: 20px;
+        }
+        .combination >div>h3{
+            background-color: blue;
+            padding: 20px;
+        }
+        .combination >div>p{
+            background-color: pink;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>there are 4 different combination in css...</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>descendent selector (using space)</li>
+        <li>child selector (using > symbol</li>
+        <li>adjacent sibling selector(using + symbol)</li>
+        <li>general sibling selector(using ~symbol</li>
+    </ol>
+    <hr>
+    <h1>descendent selector (using > symbol)example....</h1>
+    <hr>
+    <section class="combination" id="shayana">
+            <h3>first h3 tag....(child element)</h3>
+    <p>first paragraph(child element)</p>
+
+    <h3>second h3 tag....(child element)</h3>
+    <p>second  paragraph(child element)</p>
+
+    <h3>third h3 tag....(child element)</h3>
+    <p>third paragraph(child element)</p>
+
+    <div>
+        <h3>fourth h3 tag....(grandchild element)</h3>
+    <p>forth paragraph(grandchild element)</p>
+    </div>
+
+    <h3>fifth h3 tag....(child element)</h3>
+    <p>fifth paragraph(child element)</p>
+</section>
+</body>
+</html>
